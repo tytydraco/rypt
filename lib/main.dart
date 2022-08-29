@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:rypt/src/data/local/shared_objects.dart';
 import 'package:rypt/src/ui/screens/exercises/exercises_screen.dart';
 import 'package:rypt/src/ui/themes.dart';
 
@@ -13,10 +15,13 @@ class Rypt extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Rypt',
-      theme: primaryTheme,
-      home: const ExercisesScreen(),
+    return Provider(
+      create: (_) => SharedObjects(),
+      child: MaterialApp(
+        title: 'Rypt',
+        theme: primaryTheme,
+        home: const ExercisesScreen(),
+      ),
     );
   }
 }
