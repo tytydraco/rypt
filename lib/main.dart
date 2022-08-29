@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:rypt/src/themes.dart';
+import 'package:rypt/src/ui/screens/exercises/exercises_screen.dart';
+import 'package:rypt/src/ui/themes.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Rypt());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+/// The main entry point for the app.
+class Rypt extends StatelessWidget {
+  /// Creates a new [Rypt].
+  const Rypt({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Rypt',
       theme: primaryTheme,
-      home: Container(),
+      home: const ExercisesScreen(),
     );
   }
 }
