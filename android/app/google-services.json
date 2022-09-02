@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "776026793185",
+    "project_id": "rypt-7a8e5",
+    "storage_bucket": "rypt-7a8e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776026793185:android:ab58a4cf8fc14cafb103a0",
+        "android_client_info": {
+          "package_name": "com.draco.rypt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776026793185-3f3barsl048vobinc34cbo0gga6gfbb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJeOzzOHb-hGLvNMyjrvIFj970Xj8aoZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776026793185-3f3barsl048vobinc34cbo0gga6gfbb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
