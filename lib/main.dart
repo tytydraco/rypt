@@ -15,8 +15,23 @@ class Rypt extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Provider(
-      create: (_) => SharedObjects(),
+    final _sharedObjects = SharedObjects();
+
+    // Set some testing values.
+    _sharedObjects.exercisesNames.set([
+      'Bench press',
+      'Overhead Press',
+      'Squat',
+      'Deadlift',
+      'Bent over row',
+      'Bicep curl',
+      'Tricep extension',
+      'Romanian deadlift',
+      'Lateral raise',
+    ]);
+
+    return Provider.value(
+      value: _sharedObjects,
       child: MaterialApp(
         title: 'Rypt',
         theme: primaryTheme,
