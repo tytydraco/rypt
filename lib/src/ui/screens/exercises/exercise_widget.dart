@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rypt/src/ui/screens/details/details_screen.dart';
 
 /// A clickable widget that displays an exercise.
 class ExerciseWidget extends StatelessWidget {
@@ -13,8 +14,18 @@ class ExerciseWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Text(name),
+    return InkWell(
+      child: Card(
+        child: Text(name),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute<void>(
+            builder: (context) => DetailsScreen(exerciseName: name),
+          ),
+        );
+      },
     );
   }
 }
