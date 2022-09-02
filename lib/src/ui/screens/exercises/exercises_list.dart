@@ -14,8 +14,8 @@ class ExercisesList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemBuilder: (_, index) => ExerciseWidget(name: exercisesNames[index]),
+    return ListView(
+      children: exercisesNames.map((e) => ExerciseWidget(name: e)).toList(),
     );
   }
 }
